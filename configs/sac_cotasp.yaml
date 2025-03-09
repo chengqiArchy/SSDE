@@ -1,0 +1,59 @@
+# networks
+actor_configs:
+  clip_mean: 1.0
+  final_fc_init_scale: 1.0e-4
+  hidden_dims: !!python/tuple
+  - 1024
+  - 1024
+  - 1024
+  - 1024
+  name_activation: leaky_relu
+  state_dependent_std: true
+  use_layer_norm: true
+critic_configs:
+  hidden_dims: !!python/tuple
+  - 256
+  - 256
+  - 256
+  - 256
+  name_activation: leaky_relu
+  use_layer_norm: true
+# dictionaries
+update_coef: false
+update_dict: false
+dict_configs_random:
+  alpha: 0.0001 # change this
+  c: 1.0
+  method: lasso_lars
+  positive_code: false
+  scale_code: false
+dict_configs_fixed:
+  alpha: 0.01 # change this
+  c: 1.0
+  method: lasso_lars
+  positive_code: false
+  scale_code: false
+# optimizers
+pi_opt_configs:
+  optim_algo: adam
+  clip_method: none
+  max_norm: -1
+  opt_kargs:
+    learning_rate: 3.0e-4
+q_opt_configs:
+  optim_algo: adam
+  clip_method: none
+  max_norm: -1
+  opt_kargs:
+    learning_rate: 3.0e-4
+t_opt_configs:
+  optim_algo: adam
+  clip_method: none
+  max_norm: -1
+  opt_kargs:
+    learning_rate: 3.0e-4
+# SAC misc
+init_temperature: 1.0
+target_update_period: 1
+target_entropy: -2.0
+tau: 0.005
