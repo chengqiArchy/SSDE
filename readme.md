@@ -1,7 +1,7 @@
 # Structured Sparsity and Dormant-guided Exploration (SSDE)
 
 ## Overview
-This repository contains the implementation of the paper [Mastering Continual Reinforcement Learning through Fine-grained Network Allocation and Dormant Neuron Exploration](https://openreview.net/pdf?id=3ENBquM4b4). Our method addresses the continual learning problem in Meta-World by leveraging a structure-based approach to mitigate catastrophic forgetting. Additionally, we introduce a new metric, input sensitivity, to measure neuron dormancy, which helps tackle the challenging and unstable stick-pull sub-task.
+This repository contains the implementation of the paper [Mastering Continual Reinforcement Learning through Fine-grained Network Allocation and Dormant Neuron Exploration](https://arxiv.org/abs/2503.05246). Our method addresses the continual learning problem in Meta-World by leveraging a structure-based approach to mitigate catastrophic forgetting. Additionally, we introduce a new metric, input sensitivity, to measure neuron dormancy, which helps tackle the challenging and unstable stick-pull sub-task.
 
 ## Key Dependencies
 
@@ -49,7 +49,7 @@ You can simply run the bash script here:
 ./run.sh
 ```
 
-> Here a an link to reproduced [CoTASP_result](https://wandb.ai/iclr_2025_ssde_continual_rl-iclr/CoTASP_Testing/reports/ICLR2025_CoTASP_Reproduce--VmlldzoxMDM1MzAzNg?accessToken=22xe9avpmoynbchfcwyg4utxqsypxsre5r4yxamyfs3wcstsajc0ygjq0hzats3t), the setting have been asligned with the original `continual world` setting.
+> Here a an link to reproduced [CoTASP_result](https://wandb.ai/iclr_2025_ssde_continual_rl-iclr/CoTASP_Testing/reports/CoTASP_Reproduce--VmlldzoxMDM1MzAzNg), the setting have been asligned with the original `continual world` setting.
 
 ## Acknowledgement
 
